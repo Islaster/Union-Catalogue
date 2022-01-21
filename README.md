@@ -9,6 +9,8 @@
 #### Keep track of all current book club meetings happening on our premises.
 #### View all of our members details to keep in contact with them when necessary.
 
+![image](https://imgur.com/6Pxuh6B)
+
 
 
 ## Getting Started
