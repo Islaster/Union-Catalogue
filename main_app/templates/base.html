@@ -24,10 +24,10 @@
     <title>Union Catalogue</title>
   </head>
 
-  <body>
+  <body class="basehtml">
     <header class="navbar-fixed">
       <nav>
-        <div class="nav-wrapper indigo lighten-2">
+        <div class="nav-wrapper blue darken-2">
           <ul>
             <li><a href="{% url 'home' %}" class="left brand-logo">&nbsp;&nbsp;Union Catalogue</a></li>
           </ul>
@@ -59,16 +59,16 @@
 
     <main class="container">
       {% if user.user_type == 'M' %}
-        <h5>Logged in as Member</h5>
+        
       {% elif user.user_type == 'S' %}
-        <h5>Logged in as Staff</h5>
+        <h5 class="loginstaff">Staff Account</h5>
       {% endif %}
 
       {% block content %} 
       {% endblock %}
     </main>
 
-    <footer class="page-footer indigo lighten-2">
+    <footer class="page-footer blue darken-2">
       <!-- <div class="footer-copyright"> -->
         <div class="container">
         © 2022 All Rights Reserved | Union Catalogue
@@ -82,6 +82,7 @@
       <!-- </div> -->
    </footer>
 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   </body>
 
 </html>
